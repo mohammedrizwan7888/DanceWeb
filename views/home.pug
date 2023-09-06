@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts  
+    script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content  
+    section#introSection
+        div Welcome to Pasha's Dance Academy 
+        div.small Eat Sleep Dance Repeat
+
+    section#MissionSection 
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img 2.png")
+                div.card-content
+                    p This is the best acedamy 
+        div.card
+            h3  Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img 1.png")
+                div.card-content
+                    p This is the best acedamy 
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/img 3.png")
+                div.card-content
+                    p This is the best acedamy 
+
+    section#sponsorSection
+        h2 Our Sponsor
+         #sponsers 
+                    img(src="/static/img/P&G_logo.png",alt="sponsor Image", Class="splImage")
+                    img(src="/static/img/company-logo-ford-logos-download-22.png",alt="sponsor Image", Class="splImage")
+                    img(src="/static/img/4.logimg.png",alt="sponsor Image", Class="splImage")
+                    img(src="/static/img/hyundai-.png",alt="sponsor Image", Class="splImage")
